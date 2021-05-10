@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="20">
+
+        <Frame BackgroundColor="#FFCC33" CornerRadius="0">
+            <Label Text="myCalc" HorizontalTextAlignment="Start" TextColor="White" FontSize="36" />
+        </Frame>
+
+        <StackLayout Orientation="Vertical" Padding="20">
+
+            <Label Text="primer numero" FontSize="25"></Label>
+            <Entry x:Name="nu1" Keyboard="Numeric"></Entry>
+
+            <Label Text="Segundo numero" FontSize="25"></Label>
+            <Entry x:Name="nu2" Keyboard="Numeric"></Entry>
+
+            <Label Text="Seleccione la operacion que desea realizar" FontSize="15" FontAttributes="Bold" Padding="30"></Label>
+
+            <Picker x:Name="pik"></Picker>
+
+            <Button Text="Resultado" x:Name="btnres" Clicked="btnres_Clicked" BackgroundColor="Red" ></Button>
+
+            <Label x:Name="labelresu" Text="?" FontSize="200" HorizontalOptions="Center"></Label>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
